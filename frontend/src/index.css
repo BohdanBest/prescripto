@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Outfit;
+}
+
+.active hr {
+  @apply block;
+}
+.banner {
+  @apply text-xl sm:text-2xl md:text-3xl lg:text-5xl;
+}
+
+.doctor-filter{
+  @apply w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded cursor-pointer transition-all;
+}
+
+::-webkit-scrollbar {
+  @apply hidden;
+}
+
+@media(max-width:740px){
+  .active p{
+    @apply text-white bg-primary
+  }
+}
